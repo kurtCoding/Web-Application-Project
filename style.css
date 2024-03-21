@@ -1,0 +1,73 @@
+main {
+    background: rgb(184, 220, 143);
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 20px 14% 20 14%; */
+    margin: 1px;
+}
+header {
+    text-align: center;
+    background: burlywood;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, .2);
+    background-blend-mode: lighten;
+    background-image: url(https://d1inegp6v2yuxm.cloudfront.net/royal-academy/image/upload/c_limit,cs_tinysrgb,dn_72,f_auto,fl_progressive.keep_iptc,w_1200/hqgcntwbeh7kyfkolkbm.jpeg);
+}
+body {
+    display: block;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr;
+}
+.artForm {
+    display: grid;
+    margin: 0px;
+    font-size: 21px;
+}
+.artwork__block {
+    width: 90%;
+    display: flex;
+}
+.artwork__info {
+    width: 100%;
+    border: 15px;
+}
+.artwork__img {
+    width: 50%;
+    height: 50%;
+}
+input {
+    text-align: center;
+    size: 100px;
+}
+h3 {
+    font-style: italic;
+}
+span {
+    font-size: 25px;
+}
+.remove-button {
+    margin-top: 15px;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 15%;
+}
+.stock-button {
+    border-radius: 15%;
+    background-color: blue;
+    color: whitesmoke;
+}
+.amount-button {
+    border-radius: 15%;
+    background-color: gray;
+    color: whitesmoke;
+}
+.submit-button {
+    border-radius: 15%;
+    background-color: yellow;
+    color: black;
+    height: 30px;
+    width: 70px;
+    text
+}
