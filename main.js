@@ -2,20 +2,24 @@ const submitButton = document.querySelector(".submit-button");
 
 const artwrk = document.querySelector(".artwork");
 
-submitButton.addEventListener("click", (e) => {
-    e.preventDefault()
+const form = document.querySelector(".artForm");
 
-    const artName = document.getElementById("art-name").value;
+
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const artName = e.target.artName.value;
     
-    const Artist = document.getElementById("artist").value;
+    const Artist = e.target.artist.value;
 
-    const Img = document.getElementById("art-image").value;
+    const Img = e.target.image.value;
 
-    const style = document.getElementById("art-style").value;
+    const style = e.target.artStyle.value;
 
-    const price = document.getElementById("art-price").value;
+    const price = e.target.artPrice.value;
 
-    const div = document.createElement("div")
+    const div = document.createElement("div");
 
     div.classList.add("artwork__block");
 
@@ -25,7 +29,7 @@ submitButton.addEventListener("click", (e) => {
         <hr/>
         <h3>-${Artist}</h3>
         <br/>
-        <span>${price}</span>
+        <span>$${price}</span>
         <br/>
         <input type="button" value="In Stock" class="stock-button"/>
         <input type="button" value="0" class="amount-button"/>
@@ -34,27 +38,26 @@ submitButton.addEventListener("click", (e) => {
 
         artwrk.append(div);
 
-        const removeButton = document.querySelectorAll(".remove-button");
-
-removeButton.forEach((button) => {
-    button.addEventListener("click", (e) => {
-        e.target.parentNode.parentNode.remove()
+        const button = div.querySelector(".remove-button");
+        addRemove(button);  
     })
-})
-})
 
 const removeButton = document.querySelectorAll(".remove-button");
 
-removeButton.forEach((button) => {
+function addRemove(button) {
     button.addEventListener("click", (e) => {
         e.target.parentNode.parentNode.remove()
     })
+}
+
+removeButton.forEach((button) => {
+    addRemove(button);
 })
 
-const form = document.querySelector(".artForm");
 
 const resetButton = document.querySelector(".reset-button");
 
 resetButton.addEventListener("click", (e) => {
     e.target.form.reset();
 })
+
