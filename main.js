@@ -4,7 +4,21 @@ const artwrk = document.querySelector(".artwork");
 
 const form = document.querySelector(".artForm");
 
+const stockButtons = document.querySelectorAll(".stock-button");
 
+stockButtons.forEach((stockButton) => {
+    addStockToggle(stockButton);
+})
+
+function addStockToggle(stockButton) {
+    stockButton.addEventListener("click", (e) => {
+        if (stockButton.value === "In Stock") {
+            stockButton.value = "Out of Stock";
+        } else {
+            stockButton.value = "In Stock";
+        }
+    })
+}
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -40,6 +54,9 @@ form.addEventListener("submit", (e) => {
 
         const button = div.querySelector(".remove-button");
         addRemove(button);  
+
+        const stockButton = div.querySelector(".stock-button");
+        addStockToggle(stockButton);
     })
 
 const removeButton = document.querySelectorAll(".remove-button");
