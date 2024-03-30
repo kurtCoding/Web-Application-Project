@@ -1,7 +1,5 @@
 const submitButton = document.querySelector(".submit-button");
 
-const form = document.querySelector(".artForm");
-
 const artwrk = document.querySelector(".artwork");
 
 submitButton.addEventListener("click", (e) => {
@@ -53,6 +51,7 @@ removeButton.forEach((button) => {
     })
 })
 
+const form = document.querySelector(".artForm");
 
 const resetButton = document.querySelector(".reset-button");
 
