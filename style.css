@@ -4,6 +4,7 @@ main {
     grid-template-columns: 1fr 1fr;
     /* padding: 20px 14% 20 14%; */
     margin: 1px;
+    /* border: 2px solid blue; */
 }
 header {
     text-align: center;
@@ -24,6 +25,14 @@ body {
     display: grid;
     margin: 0px;
     font-size: 21px;
+    /* border: 1px solid blue; */
+}
+.art-form {
+    border: 3px solid blue;
+    padding: 10px;
+}
+.artwork {
+    border: 3px solid black;
 }
 .artwork__block {
     width: 90%;
@@ -47,6 +56,10 @@ h3 {
 span {
     font-size: 25px;
 }
+.spilt {
+    border: 5px solid brown;
+    margin: 0px;
+}
 .remove-button {
     margin-top: 15px;
     color: whitesmoke;
@@ -69,5 +82,14 @@ span {
     color: black;
     height: 30px;
     width: 70px;
-    text
+}
+.reset-button {
+    border-radius: 15%;
+    background-color: greenyellow;
+    color: black;
+    height: 30px;
+    width: 70px;
+}
+.artForm-input {
+    width: 550px;
 }

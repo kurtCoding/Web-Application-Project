@@ -12,7 +12,7 @@
         <!-- <img src="https://d1inegp6v2yuxm.cloudfront.net/royal-academy/image/upload/c_limit,cs_tinysrgb,dn_72,f_auto,fl_progressive.keep_iptc,w_1200/hqgcntwbeh7kyfkolkbm.jpeg" alt="the-last-supper"/> -->
         <h1>Akashic Art Gallery</h1>
     </header>
-    <hr/>
+    <hr class="spilt"/>
     <main>
         <section class="artwork">
             <div class="artwork__block">
@@ -66,21 +66,23 @@
         <section class="art-form">
             <form class="artForm">
                 <label for="art-name">Art Name</label>
-                <input type="text" id="art-name" name="artName" class="artName" required/>
+                <input type="text" id="art-name" name="artName" class="artForm-input" required/>
                 <br/>
                 <label for="artist">Artist</label>
-                <input type="text" id="artist" name="Artist" class="artist" required/>
+                <input type="text" id="artist" name="Artist" class="artForm-input" required/>
                 <br/>
                 <label for="art-image">Image</label>
-                <input type="url" id="art-image" name="image" class="artImage"/>
+                <input type="url" id="art-image" name="image" class="artForm-input"/>
                 <br/>
                 <label for="art-style">Style</label>
-                <input type="text" id="art-style" name="art-style" class="artStyle" required/>
+                <input type="text" id="art-style" name="art-style" class="artForm-input" required/>
                 <br/>
                 <label for="art-price">Price</label>
-                <input type="text" id="art-price" name="art-price" class="artPrice" required/>
+                <input type="text" id="art-price" name="art-price" class="artForm-input" required/>
                 <br/>
                 <input type="submit" value="submit" class="submit-button"/>
+                <br/>
+                <input type="button" value="Reset" class="reset-button"/>
             </form>
         </section>
     </main>
