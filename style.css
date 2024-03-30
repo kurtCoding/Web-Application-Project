@@ -37,10 +37,11 @@ body {
 .artwork__block {
     width: 90%;
     display: flex;
+    border: 15px;
+    padding: 10px 0px;
 }
 .artwork__info {
     width: 100%;
-    border: 15px;
 }
 .artwork__img {
     width: 50%;
