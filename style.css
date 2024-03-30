@@ -46,6 +46,10 @@ body {
     width: 50%;
     height: 50%;
 }
+h1 {
+  color: gold;
+  font-size: 50px;
+}
 input {
     text-align: center;
     size: 100px;
@@ -60,11 +64,29 @@ span {
     border: 5px solid brown;
     margin: 0px;
 }
+
+.remove-button, .pointer {
+    cursor: pointer;
+}
+
+.submit-button, .pointer {
+    cursor: pointer;
+}
+
+.reset-button, .pointer {
+    cursor: pointer;
+}
+
 .remove-button {
     margin-top: 15px;
     color: whitesmoke;
     background-color: red;
     border-radius: 15%;
+}
+
+.remove-button:hover {
+    background-color: orange;
+    /* color: orchid; */
 }
 .stock-button {
     border-radius: 15%;
@@ -83,6 +105,10 @@ span {
     height: 30px;
     width: 70px;
 }
+.submit-button:hover {
+    background-color: orange;
+}
+
 .reset-button {
     border-radius: 15%;
     background-color: greenyellow;
@@ -90,6 +116,10 @@ span {
     height: 30px;
     width: 70px;
 }
+.reset-button:hover {
+    background-color: orange;
+}
+
 .artForm-input {
     width: 550px;
 }
