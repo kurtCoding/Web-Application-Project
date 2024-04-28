@@ -24,7 +24,7 @@ body {
 .artForm {
     display: grid;
     margin: 0px;
-    font-size: 21px;
+    font-size: 25px;
     /* border: 1px solid blue; */
 }
 .art-form {
